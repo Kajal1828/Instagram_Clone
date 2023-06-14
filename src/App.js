@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import LoginComponents from './Component/Router/LoginPage/Login.components'
+import {BrowserRouter, Route, Routes} from "react-router-dom"
+import SignupComponents from './Component/Router/SignupPage'
+// import HomeComponents from './Component/Router/HomePage/Home.components'
+// import Home from './Component/Router/HomePage/Home'
+// import NavbarContainer from './Component/Router/NavBar/Navbar.container'
+import HomeComponents from './Component/Router/HomePage'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default class App extends Component {
+  render() {
+    return (
+      <div>
+        {/* <LoginComponents/> */}
+        {/* <SignupComponents/> */}
+        <BrowserRouter > 
+        <Routes>
+          <Route path='/'  element={<LoginComponents/>}></Route>
+          <Route path='/signup'  element={<SignupComponents/>}></Route>
+          <Route path='/home'  element={<HomeComponents/>}></Route>
+        </Routes>
+        
+        </BrowserRouter>
+        {/* <Home/> */}
+        
+
+      </div>
+    )
+  }
 }
 
-export default App;

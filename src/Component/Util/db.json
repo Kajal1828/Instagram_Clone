@@ -1,0 +1,160 @@
+{
+  "user": [
+    {
+      "email": "kajal@gmail.com",
+      "fullName": "kajal kumari",
+      "username": "Kajal",
+      "password": "1223",
+      "id": 1
+    },
+    {
+      "email": "ABC@gmail.com",
+      "fullName": "ABC",
+      "username": "ABN_NN",
+      "password": "12345",
+      "id": 2
+    },
+    {
+      "email": "AAA@gmail.com",
+      "fullName": "AAA",
+      "username": "AA_AA",
+      "password": "AAAA",
+      "id": 3
+    },
+    {
+      "email": "",
+      "fullName": "",
+      "username": "",
+      "password": "",
+      "id": 4
+    }
+  ],
+  "status": [
+    {
+      "username": "Kajal",
+      "imageURL": "https://tse1.mm.bing.net/th?id=OIP.1zGnctxi9dkL7WSsUE10qAHaJ4&pid=Api&P=0&h=180"
+    },
+    {
+      "username": "Jagdish",
+      "imageURL": "https://tse2.mm.bing.net/th?id=OIP.0xuwsfXqC-AKQyapCoT-6QHaHa&pid=Api&P=0&h=180"
+    },
+    {
+      "username": "Amit",
+      "imageURL": "https://tse4.mm.bing.net/th?id=OIP.XSZAFm-5JI7nriDLwZqRQQHaE7&pid=Api&P=0&h=180"
+    },
+    {
+      "username": "Narendra",
+      "imageURL": "https://tse1.mm.bing.net/th?id=OIP.uZQdLXEgBEvR2OkcVVbBMQHaFj&pid=Api&rs=1&c=1&qlt=95&w=140&h=104"
+    },
+    {
+      "username": "Prasanna",
+      "imageURL": "https://tse4.mm.bing.net/th?id=OIP.D3jIYD8Vn1GaxkeFmlgvjwHaCv&pid=Api&P=0&h=180"
+    },
+    {
+      "username": "Akhilesh",
+      "imageURL": "https://tse4.mm.bing.net/th?id=OIP.ljsj9JXX9a6E5P_p-vEg_QHaJN&pid=Api&P=0&h=180"
+    },
+    {
+      "username": "Keshav",
+      "imageURL": "https://tse4.mm.bing.net/th?id=OIP.XSZAFm-5JI7nriDLwZqRQQHaE7&pid=Api&P=0&h=180"
+    },
+    {
+      "username": "Rani",
+      "imageURL": "https://tse1.mm.bing.net/th?id=OIP.uZQdLXEgBEvR2OkcVVbBMQHaFj&pid=Api&rs=1&c=1&qlt=95&w=140&h=104"
+    },
+    {
+      "username": "Meghna",
+      "imageURL": "https://tse4.mm.bing.net/th?id=OIP.D3jIYD8Vn1GaxkeFmlgvjwHaCv&pid=Api&P=0&h=180"
+    },
+    {
+      "username": "Atul",
+      "imageURL": "https://tse4.mm.bing.net/th?id=OIP.ljsj9JXX9a6E5P_p-vEg_QHaJN&pid=Api&P=0&h=180"
+    }
+  ],
+  "post": [
+    {
+      "postId": "123456",
+      "username": "Kajal",
+      "postImageURL": "https://i.pinimg.com/originals/aa/fa/93/aafa933666f7d625238de94232751e67.jpg",
+      "timeStamp": "12345",
+      "likes": "34"
+    },
+    {
+      "postId": "123456",
+      "username": "Jagdish",
+      "postImageURL": "https://www.stylesgap.com/wp-content/uploads/2019/04/Long-Kurtas-Frocks-Indian-Stylish-Tunics-Kurtis-Kurta-Dress-Ritu-Kumar-Collection-2.jpg",
+      "timeStamp": "12345",
+      "likes": "64"
+    },
+    {
+      "postId": "123456",
+      "username": "Amit",
+      "postImageURL": "https://i.pinimg.com/originals/a7/4b/5b/a74b5b2dde87cf5c227a6aef9f9742cb.jpg",
+      "timeStamp": "12345",
+      "likes": "104"
+    },
+    {
+      "postId": "123456",
+      "username": "Mohni",
+      "postImageURL": "https://i.pinimg.com/originals/e5/ac/09/e5ac090778bd8d81ca66e990e9b9d863.jpg",
+      "timeStamp": "12345",
+      "likes": "124"
+    },
+    {
+      "postId": "123456",
+      "username": "Priyanka",
+      "postImageURL": "https://tse2.mm.bing.net/th?id=OIP.j7vsy6dDOsOtU4I2o3DtGgHaJZ&pid=Api&P=0&h=180",
+      "timeStamp": "12345",
+      "likes": "14"
+    },
+    {
+      "postId": "123456",
+      "username": "Amit",
+      "postImageURL": "https://i.pinimg.com/originals/da/cf/c2/dacfc217a24a23b1496a4519000763e5.jpg",
+      "timeStamp": "12345",
+      "likes": "174"
+    }
+  ],
+  "comment": [
+    {
+      "username": "Kajal",
+      "commentId": "1234",
+      "timeStamp": "123456",
+      "description": ""
+    },
+    {
+      "username": "Jagdish",
+      "commentId": "1234",
+      "timeStamp": "123456",
+      "description": "nice..."
+    },
+    {
+      "username": "Amit",
+      "commentId": "1234",
+      "timeStamp": "123456",
+      "description": "Osm.."
+    }
+  ],
+  "suggestion": [
+    {
+      "username": "Anjali",
+      "imageURL": "https://tse1.mm.bing.net/th?id=OIP.uZQdLXEgBEvR2OkcVVbBMQHaFj&pid=Api&rs=1&c=1&qlt=95&w=140&h=104"
+    },
+    {
+      "username": "Anubhav",
+      "imageURL": "https://tse2.mm.bing.net/th?id=OIP.j7vsy6dDOsOtU4I2o3DtGgHaJZ&pid=Api&P=0&h=180"
+    },
+    {
+      "username": "Mayank",
+      "imageURL": "https://tse4.mm.bing.net/th?id=OIP.ljsj9JXX9a6E5P_p-vEg_QHaJN&pid=Api&P=0&h=180"
+    },
+    {
+      "username": "Kaushal",
+      "imageURL": "https://i.pinimg.com/originals/da/cf/c2/dacfc217a24a23b1496a4519000763e5.jpg"
+    },
+    {
+      "username": "Anirudh",
+      "imageURL": "https://tse4.mm.bing.net/th?id=OIP.pI9-rC8D3f2akYRWQhWo1AHaLt&pid=Api&P=0&h=180"
+    }
+  ]
+}
