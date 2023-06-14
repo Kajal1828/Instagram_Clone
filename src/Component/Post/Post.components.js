@@ -1,8 +1,8 @@
 import React, { PureComponent } from 'react'
-import Avtar from '../../Images/Avtar.jpg'
-import Heart from '../../Images/heart.png'
-import Comment from '../../Images/comment.png'
-import Share from '../../Images/share.png'
+import Avtar from '../Images/Avtar.jpg'
+import Heart from '../Images/heart.png'
+import Comment from '../Images/comment.png'
+import Share from '../Images/share.png'
 import "./Post.scss"
 
 export default class PostComponents extends PureComponent {

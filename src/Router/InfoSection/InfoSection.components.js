@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react'
 import "./InfoSection.scss";
-import Avtar from '../../Images/Avtar.jpg'
+import Avtar from '../../Component/Images/Avtar.jpg'
 
 export default class InfoSectionComponents extends PureComponent {
   render() {

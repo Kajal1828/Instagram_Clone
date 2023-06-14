@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react'
 import "./MainContent.scss"
 import InfoSectionContainer from '../InfoSection'
 import MainPageContainer from '../MainPage'
-import SideNavbarContainer from '../SideNavbar'
+import SideNavbarContainer from '../../Component/SideNavbar'
 import StatusbarContainer from '../StatusBar'
 import SuggestionsContainer from '../Suggestions/Suggestions.container'
 

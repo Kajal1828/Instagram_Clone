@@ -1,11 +1,9 @@
 import React, { Component } from 'react'
-import LoginComponents from './Component/Router/LoginPage/Login.components'
+
 import {BrowserRouter, Route, Routes} from "react-router-dom"
-import SignupComponents from './Component/Router/SignupPage'
-// import HomeComponents from './Component/Router/HomePage/Home.components'
-// import Home from './Component/Router/HomePage/Home'
-// import NavbarContainer from './Component/Router/NavBar/Navbar.container'
-import HomeComponents from './Component/Router/HomePage'
+import SignupComponents from './Router/SignupPage'
+import HomeComponents from './Router/HomePage'
+import LoginComponents from './Router/LoginPage/Login.components'
 
 export default class App extends Component {
   render() {

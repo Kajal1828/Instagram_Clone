@@ -1,14 +1,14 @@
 import React, { PureComponent } from "react";
 import "./SideNav.scss";
-import Home from "../../Images/homee.svg"
-import Search from "../../Images/search.png"
-import Explore from "../../Images/explore.png"
-import Reels from "../../Images/instagram-reels.svg"
-import messenger from "../../Images/messenger.png"
-import Heart from "../../Images/heart.png"
-import Create from "../../Images/add-button.png"
-import Avtar from "../../Images/Avtar.jpg"
-import Menu from "../../Images/menu.png"
+import Home from "../Images/homee.svg"
+import Search from "../Images/search.png"
+import Explore from "../Images/explore.png"
+import Reels from "../Images/instagram-reels.svg"
+import messenger from "../Images/messenger.png"
+import Heart from "../Images/heart.png"
+import Create from "../Images/add-button.png"
+import Avtar from "../Images/Avtar.jpg"
+import Menu from "../Images/menu.png"
 
 export default class SideNavbarComponents extends PureComponent {
   render() {

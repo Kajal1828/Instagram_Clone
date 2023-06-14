@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react'
 import "./MainPage.scss"
-import PostContainer from '../Post'
+import PostContainer from '../../Component/Post'
 
 export default class MainPageComponents extends PureComponent {
   render() {
