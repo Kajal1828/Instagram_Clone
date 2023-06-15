@@ -12,6 +12,7 @@ import Menu from "../Images/menu.png"
 
 export default class SideNavbarComponents extends PureComponent {
   render() {
+    const { onImageUpload } = this.props;
     return (
         <div className="sidenav">
         <img
@@ -45,10 +46,20 @@ export default class SideNavbarComponents extends PureComponent {
              <img src={Heart} alt="" />
             <span>Notifications</span>
           </button>
-          <button className="sidenav__button">
+          {/* <button className="sidenav__button">
           <img src={Create} alt="" />
             <span>Create</span>
+          </button> */}
+          <button className="sidenav__button" onClick={() => this.uploadInput.click()}>
+            <img src={Create} alt="" />
+            <span>Create</span>
           </button>
+          <input
+            type="file"
+            style={{ display: 'none' }}
+            ref={(ref) => (this.uploadInput = ref)}
+            onChange={onImageUpload}
+          />
           <button className="sidenav__button">
               <img src={Avtar} alt="" className="sidenavimg"/>
               <span style={{marginLeft: "12px"}}>Profile</span>

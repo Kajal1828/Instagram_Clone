@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import "./Login.scss"
 export default class LoginComponents extends PureComponent {
   render() {
-    const { username, password, handleChange, handleSubmit } = this.props;
+    const { username, password, handleChange,handleAuthication } = this.props;
     return (
       <div className="login-container">
         <div className="login-card">
@@ -12,7 +12,7 @@ export default class LoginComponents extends PureComponent {
             alt="Instagram logo"
             className="logo"
           />
-          <form onSubmit={handleSubmit} className='login'>
+          <div  className='login'>
             <input
               type="text"
               name="username"
@@ -27,8 +27,8 @@ export default class LoginComponents extends PureComponent {
               value={password}
               onChange={handleChange}
             />
-            <button type="submit" className='submit'>Log In</button>
-          </form>
+            <button onClick={handleAuthication} className='submit'>Log In</button>
+          </div>
           <div className="forgot-password">
             <a href="#">Forgot Password?</a>
             <p>

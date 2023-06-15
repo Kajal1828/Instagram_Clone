@@ -1,42 +1,17 @@
 import React, { PureComponent } from 'react';
-import LoginComponents from './LoginComponents';
+import LoginComponents from './Login.components';
+import { Link } from 'react-router-dom';
 
-export default class LoginContainer extends PureComponent {
-  constructor() {
-    super();
-    this.state = {
-      username: '',
-      password: ''
-    };
-  }
-
-  handleChange = (event) => {
-    this.setState({
-      [event.target.name]: event.target.value
-    });
-  }
-
-  handleSubmit = (event) => {
-    event.preventDefault();
-    console.log('Logging in...');
-  }
-
+export default class Login extends PureComponent {
   render() {
     return (
       <LoginComponents
-        username={this.state.username}
-        password={this.state.password}
-        handleChange={this.handleChange}
-        handleSubmit={this.handleSubmit}
-      >
-        <div className="forgot-password">
-          <Link to="/signup">Forgot Password?</Link>
-          <p>
-            Don't have an account?
-            <Link to="/login"> SignUp</Link>
-          </p>
-        </div>
-      </LoginComponents>
+      username={this.props.username}
+      password={this.props.password}
+      handleChange={this.props.handleChange}
+      handleAuthication={this.props.handleAuthication}
+      />
+
     );
   }
 }
