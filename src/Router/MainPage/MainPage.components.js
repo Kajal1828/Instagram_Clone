@@ -10,10 +10,11 @@ export default class MainPageComponents extends PureComponent {
         <div>{
                  postArray.map((item,index)=>(
                      <PostContainer key={index} 
-                     id={item.postId} 
+                     id={item.id} 
                      userName={item.username} 
                      postImage={item.postImageURL} 
-                     likes={item.likes} />
+                     likes={item.likes} 
+                     comments={item.comments}/>
                  ))
              }
         </div>

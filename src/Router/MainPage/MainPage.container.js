@@ -27,7 +27,9 @@ getPost=()=>{
   render() {
     return (
       <div>
-        <MainPageComponents {...this.state}/>
+        <MainPageComponents {...this.state} 
+       
+        />
       </div>
     )
   }

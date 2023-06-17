@@ -13,6 +13,7 @@ export default class SideNavbarContainer extends PureComponent {
       this.setState({ uploadedImage: file });
     };
   render() {
+    const {popup,handlePopup} =this.props
     return (
       <div>
         <SideNavbarComponents
@@ -21,6 +22,7 @@ export default class SideNavbarContainer extends PureComponent {
           onImageChange={this.handleImageChange}
           onDescriptionChange={this.handleDescriptionChange}
           onSubmit={this.handleSubmit}
+          handlePopup={handlePopup}
         />
       </div>
     )

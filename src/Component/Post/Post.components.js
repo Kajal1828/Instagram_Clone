@@ -7,7 +7,10 @@ import "./Post.scss"
 
 export default class PostComponents extends PureComponent {
   render() {
-    const {commentList} = this.props
+    const {handleComment,comments,id,postComments} = this.props
+    const commentData = comments;
+    console.log(id)
+
     return (
 
         <div className='post_container'>
@@ -27,12 +30,19 @@ export default class PostComponents extends PureComponent {
                   {this.props.likes} likes     
         </div>
         <div>
+          <div>
+            {console.log(commentData)}
         {
-           commentList.map((item,index)=>(
-         <div className="post_comment"><b>{item.username}</b>: {item.description}</div>
+          commentData.map((item,index)=>(
+         <div className="post_comment" key={index}><b>{item.username}</b>: {item.description}</div>
           ))
         }
+        </div>
+        <div className='commentData'>
         <input text="text" className="post__commentbox" placeholder="Add a comment..." />
+        <button className="post__commentboxBtn" onClick={()=>postComments(id)}>Post</button> 
+        </div>
+      
         </div>
       </div>
     )

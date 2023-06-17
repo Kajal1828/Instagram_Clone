@@ -28,3 +28,71 @@ body {
   .column-6{
     flex-basis: 50%;
   }
+  .popup{
+    height: 550Px;
+    width: 35%;
+    background-color: #fff;
+    position: absolute;
+    top: 12%;
+    left: 32%;
+    color: #333;
+    box-shadow: 90px 90px 90px 90px rgba(5, 5, 5, 0.1);
+    .popup-header{
+      display: flex;
+      justify-content: space-between;
+      padding: 0 35px 0 15px;
+      border-bottom: 2px solid black;
+    }
+    h1{
+      cursor: default;
+      margin-left: 120px;
+    }
+    p{
+      font-weight: 600;
+      display: flex;
+      justify-content: center;
+      margin-top: 150px;
+    }
+    input{
+      height: 50px;
+      width: 150px;
+      margin-left: 170px;
+    }
+    input[type="file"]{
+    padding: 8px;
+    width: 200px;
+    height: 35px;
+    border-radius: 8px;
+    text-align: center;
+    color: #fff;
+    background-color: #3897f0;
+    }
+  }
+  .main{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background-color: rgba(39, 145, 216, 0.719);
+  }
+  input[type="text"]{
+    height: 100px;
+    width: 350px;
+    margin-left: 90px;
+  }
+  .hidden{
+    display: none;
+  }
+  h3{
+    margin-left: 225px;
+  }
+  .btn{
+    height: 30px;
+    width: 100px;
+    margin-left: 75%;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: #3897f0;
+    color: #fff;
+    font-weight: 600;
+  }

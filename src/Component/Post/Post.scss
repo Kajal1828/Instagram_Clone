@@ -37,14 +37,29 @@
     margin: 5px;
     margin-left: 2%;
 }
+.commentData{
+    display: flex;
+    position: relative;
+
+}
 .post_comment {
     margin: 10px;
 }
 .post__commentbox {
     height: 56px;
-    width: 480px;
+    width: 450px;
     border: 0px;
     border-bottom: 1px solid #dbdbdb;
     font-size: 16px;
     padding-left: 10px;
+    outline: none;
+}
+.post__commentboxBtn{
+    position: absolute;
+    right:30px;
+    top:20px;
+    border: 0;
+    color: #3897f0;
+    font-weight: bold;
+    background-color: #fff;
 }

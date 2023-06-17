@@ -12,8 +12,9 @@ import Menu from "../Images/menu.png"
 
 export default class SideNavbarComponents extends PureComponent {
   render() {
-    const { onImageUpload } = this.props;
+    const { onImageUpload  , handlePopup} = this.props;
     return (
+      <div>
         <div className="sidenav">
         <img
           className="sidenav__logo"
@@ -46,11 +47,7 @@ export default class SideNavbarComponents extends PureComponent {
              <img src={Heart} alt="" />
             <span>Notifications</span>
           </button>
-          {/* <button className="sidenav__button">
-          <img src={Create} alt="" />
-            <span>Create</span>
-          </button> */}
-          <button className="sidenav__button" onClick={() => this.uploadInput.click()}>
+          <button className="sidenav__button" onClick={handlePopup}>
             <img src={Create} alt="" />
             <span>Create</span>
           </button>
@@ -72,6 +69,8 @@ export default class SideNavbarComponents extends PureComponent {
           </button>
         </div>
       </div>
+
+      </div>    
     )
   }
 }
