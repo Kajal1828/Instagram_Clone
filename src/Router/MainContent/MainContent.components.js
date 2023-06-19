@@ -18,10 +18,10 @@ export default class MainContentComponents extends PureComponent {
                 <h1 onClick={handlePopup}>X</h1>
               </div>
               <div>
-                  <p>Drag photos here</p>
-                  <input type="file"  onChange={handleUpload}/>
+                  <p className='caption_para'>Drag photos here</p>
+                  <input type="file"  onChange={handleUpload} className='captionfile inn'/>
                  <h3>Caption</h3>
-                <input type='text'  placeholder='Write a caption...'/>
+                 <input type='text'  placeholder='Write a caption...'  className='captionn'/>
                  <div>
                   <button className='btn' onClick={upload}>Next</button>
                  </div>

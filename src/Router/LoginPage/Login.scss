@@ -11,44 +11,46 @@
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: #fff;
+
+    .logo {
+      width: 200px;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 40px;
+    }
+    .login{
+      input {
+        width: 90%;
+        margin-bottom: 8px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-left: 4%;
+        background-color: rgb(250, 250, 250);
+        height: 35px;
+        font-size: 12px;
+      }
+      button {
+        width: 90%;
+        margin: 9px 15px;
+        background-color: #3897f0;
+        color: #fff;
+        border: none;
+        border-radius: 7px;
+        cursor: pointer;
+        height: 35px;
+      }
+
+    }
+    .forgot-password {
+      text-align: center;
+      margin-top: 10px;
+
+      a {
+        color: #3897f0;
+        text-decoration: none;
+      }
   }
   
-  .logo {
-    width: 200px;
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 40px;
-  }
-  
-  .login input {
-    width: 90%;
-    margin-bottom: 8px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    margin-left: 4%;
-    background-color: rgb(250, 250, 250);
-    height: 35px;
-    font-size: 12px;
-  }
-  
-  .login button {
-    width: 90%;
-    margin: 9px 15px;
-    background-color: #3897f0;
-    color: #fff;
-    border: none;
-    border-radius: 7px;
-    cursor: pointer;
-    height: 35px;
-  }
-  
-  .forgot-password {
-    text-align: center;
-    margin-top: 10px;
-  }
-  
-  .forgot-password a {
-    color: #3897f0;
-    text-decoration: none;
-  }
+} 
+
   

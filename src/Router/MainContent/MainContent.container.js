@@ -30,6 +30,8 @@ export default class MainContentContainer extends PureComponent {
     const data ={
       username: "Kajal",
       postImageURL: this.state.postImageURL,
+      likes:"",
+      comments:[]
       }
     fetch('http://localhost:3000/post',{
       method:'POST',

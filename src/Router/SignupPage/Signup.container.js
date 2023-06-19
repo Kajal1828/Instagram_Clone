@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react';
 import SignupComponents from './Signup.components';
+import {withRouter} from '../../Router/SignupPage/WithRouter';
 import {
   Form,
   useLoaderData,
@@ -11,7 +12,7 @@ var users={
     name:'bddebashis',
     password:'debashis111249'
     }
- export default class SignupContainer extends PureComponent {
+  class SignupContainer extends PureComponent {
   constructor(props) {
     super(props);
     this.state = {
@@ -45,9 +46,9 @@ fetch('http://localhost:3000/user', {
     console.log(res);
     if (res.status === 201) {
       // navigation.push('/home');
+      this.props.navigate('/home')
       console.log(true)
-      this.context.router.history.push("/") 
-      return redirect(`/`);
+    
       
     } else {
       throw new Error('failed');
@@ -69,4 +70,6 @@ fetch('http://localhost:3000/user', {
     );
   }
 }
+
+export default withRouter(SignupContainer);
 
