@@ -10,12 +10,23 @@ export default class PostContainer extends PureComponent {
       userName:this.props.userName,
       postImage:this.props.postImage,
       likes:this.props.likes,
-      comments:"" ,
-      newComment: this.props.comments,
-      commentdesc: "",
+      comments: this.props.comments,
+       newComment: "",
+       editingCommentId: null,
     };
   }
   
+  handleEditComment = (id) => {
+    this.setState({ editingCommentId: id });
+  };
+
+  handleDeleteComment = (id) => {
+    const updatedComments = this.state.comments.filter(
+      (comment) => comment.id !== id
+    );
+    this.setState({ comments: updatedComments });
+  };
+
   handleCommentData = (e) => {
     this.setState(
       {
@@ -51,19 +62,24 @@ export default class PostContainer extends PureComponent {
       .catch((error) => console.log(error.message));
   };
   render() {
-    const { id, userName, postImage, likes, comments } = this.props;
-    console.log(comments)
+    const { id, userName, postImage, likes } = this.props;
+    const { comments, newComment, editingCommentId } = this.state
+    
     return (
       <div>
         <PostComponents
-          id={id}
-          userName={userName}
-          postImage={postImage}
-          likes={likes}
-          comments={comments}
-          postComments={this.postComments}
-          handleCommentData={this.handleCommentData}
-        />
+           id={id}
+           userName={userName}
+           postImage={postImage}
+           likes={likes}
+           comments={comments}
+           editingCommentId={editingCommentId}
+           handleCommentData={this.handleCommentData}
+           postComments={this.postComments}
+           handleEditComment={this.handleEditComment}
+           handleSaveComment={this.handleSaveComment}
+           handleDeleteComment={this.handleDeleteComment}
+         />
       </div>
     );
   }

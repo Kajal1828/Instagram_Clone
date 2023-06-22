@@ -3,8 +3,8 @@
   border: 1px transparent;
   background-color: white;
   margin-bottom: 25px;
-  margin-left: 12.5%;
-  margin-top: 25px;
+  margin-left: 26%;
+  margin-top: 15px;
 }
 .post_header{
   max-height: 58px;
@@ -63,3 +63,178 @@
   font-weight: bold;
   background-color: #fff;
 }
+.post_comment {
+  position: relative;
+}
+
+.post_comment button {
+  margin-left: 10px;
+  padding: 2px 6px;
+  font-size: 12px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.post_comment button:hover {
+  background-color: #f5f5f5;
+}
+.btnicon img{
+  height: 15px;
+  width: 15px;
+}
+.btnicon{
+  margin-left: 90%;
+}
+
+@media (max-width: 768px) {
+  .post_container{
+  width: 220px;  
+  margin-left: 10%;
+  margin-top: 15px;
+}
+.post_header{
+  max-height: 45px;
+  border-bottom: 1px transparent;
+  display: flex;
+}
+  .post_image {
+    max-height: 30px;
+    max-width: 30px;
+    border-radius : 50%;
+  }
+
+  .post_username {
+    margin-top: 15px;
+    font-size: 10px;
+    margin-left: 1px;
+  }
+  .postimg{
+    width: 200px;
+    height: 290px;
+    margin-left: 2%;
+  }
+  .post_reactimage {
+    width: 15px;
+    height: 15px;
+    margin-left: 1%;
+  
+  }
+
+  .post__commentbox {
+    height: 38px;
+    font-size: 10px;
+  }
+
+  .post_comment button {
+    margin-left: 5px;
+    padding: 1px 4px;
+    font-size: 10px;
+  }
+  .post__commentboxBtn{
+    position: absolute;
+    right:20px;
+    top:15px;
+    font-size: 10px;
+    border: 0;
+    color: #3897f0;
+    font-weight: bold;
+    background-color: #fff;
+  }
+  .like{
+    font-size: 10px;
+    margin-left: 2px;
+  }
+  .btnicon img{
+    height: 12px;
+    width: 12px;
+  }
+  .btnicon{
+    margin-left: 90%;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .post_container{
+  width: 170px;
+  background-color: white;
+  
+  margin-left: 17%;
+  margin-top: 15px;
+}
+.post_header{
+  max-height: 45px;
+  border-bottom: 1px transparent;
+  display: flex;
+}
+  .post_image {
+    max-height: 28px;
+    max-width: 28px;
+    border-radius : 50%;
+  }
+
+  .post_username {
+    margin-top: 15px;
+    font-size: 10px;
+    margin-left: 1px;
+  }
+  .postimg{
+    width: 165px;
+    height: 240px;
+    margin-left: 2%;
+  }
+  
+
+  .post_reactimage {
+    width: 15px;
+    height: 15px;
+    margin-left: 1%;
+  
+  }
+
+  .post__commentbox {
+    height: 38px;
+    font-size: 10px;
+  }
+
+  .post_comment button {
+    margin-left: 5px;
+    padding: 1px 4px;
+    font-size: 10px;
+  }
+  .post__commentboxBtn{
+    position: absolute;
+    right:20px;
+    top:15px;
+    font-size: 10px;
+    border: 0;
+    color: #3897f0;
+    font-weight: bold;
+    background-color: #fff;
+  }
+  .like{
+    font-size: 10px;
+    margin-left: 2px;
+  }
+  .btnicon img{
+    height: 10px;
+    width: 10px;
+  }
+  .btnicon{
+    margin-left: 90%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+

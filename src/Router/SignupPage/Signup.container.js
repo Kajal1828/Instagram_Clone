@@ -1,17 +1,8 @@
 import React, { PureComponent } from 'react';
 import SignupComponents from './Signup.components';
 import {withRouter} from '../../Router/SignupPage/WithRouter';
-import {
-  Form,
-  useLoaderData,
-  redirect,
-} from "react-router-dom";
-import PropTypes from 'prop-types';
 
-var users={
-    name:'bddebashis',
-    password:'debashis111249'
-    }
+
   class SignupContainer extends PureComponent {
   constructor(props) {
     super(props);
@@ -28,9 +19,7 @@ var users={
       [e.target.name]: e.target.value,
     });
   };
-  static contextTypes = {
-    router: PropTypes.object,
-  }
+  
   handleSubmit = (e) => {
     e.preventDefault();
     console.log('kkkkkkkkk');
@@ -45,7 +34,6 @@ fetch('http://localhost:3000/user', {
   .then((res) => {
     console.log(res);
     if (res.status === 201) {
-      // navigation.push('/home');
       this.props.navigate('/home')
       console.log(true)
     

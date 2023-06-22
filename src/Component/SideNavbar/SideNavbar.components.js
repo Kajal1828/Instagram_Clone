@@ -12,7 +12,7 @@ import Menu from "../Images/menu.png"
 
 export default class SideNavbarComponents extends PureComponent {
   render() {
-    const { onImageUpload  , handlePopup} = this.props;
+    const { onImageUpload  , handlePopup , LoghandlePopup , showLogoutPopup , handleLogout} = this.props;
     return (
       <div>
         <div className="sidenav">
@@ -25,23 +25,23 @@ export default class SideNavbarComponents extends PureComponent {
         <div className="sidenav__buttons">
           <button className="sidenav__button">
             <img src={Home} alt="" />
-            <span style={{marginLeft: "20px"}}>Home</span>
+            <span>Home</span>
           </button>
           <button className="sidenav__button">
             <img src={Search} alt="" />
-            <span style={{marginLeft: "15px"}}>Search</span>
+            <span>Search</span>
           </button>
           <button className="sidenav__button">
             <img src={Explore} alt="" />
-            <span style={{marginLeft: "20px"}}>Explore</span>
+            <span>Explore</span>
           </button>
           <button className="sidenav__button">
             <img src={Reels} alt="" width={30}/>
-            <span style={{marginLeft: "15px"}}>Reels</span>
+            <span>Reels</span>
           </button>
           <button className="sidenav__button">
             <img src={messenger} alt=""/>
-            <span style={{marginLeft: "20px"}}>Messages</span>
+            <span>Messages</span>
           </button>
           <button className="sidenav__button">
              <img src={Heart} alt="" />
@@ -60,16 +60,27 @@ export default class SideNavbarComponents extends PureComponent {
           <button className="sidenav__button">
               <img src={Avtar} alt="" className="sidenavimg"/>
               <span style={{marginLeft: "12px"}}>Profile</span>
-            </button>
-        </div>
-        <div className="sidenav__more">
-          <button className="sidenav__button">
+          </button>
+
+            
+
+        {showLogoutPopup && (
+              <div className="logout-popup">
+                <button className="logout-button" onClick={handleLogout}>
+                  Logout
+                </button>
+              </div>
+            )}
+          <button className="sidenav__buttonn" onClick={LoghandlePopup}>
             <img src={Menu} alt="" />
             <span className="sidenav__buttonText">More</span>
           </button>
+       
         </div>
+        
       </div>
 
+    
       </div>    
     )
   }

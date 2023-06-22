@@ -23,28 +23,32 @@ export default class SignupComponents extends PureComponent {
               name="email"
               placeholder="Mobile Number, or Email"  
               value={email}
-              onChange={handleChange}            
+              onChange={handleChange} 
+              required           
             />
             <input
               type="text"
               name="fullName"
               placeholder="Full Name"
               value={fullName} 
-              onChange={handleChange}               
+              onChange={handleChange} 
+              required              
             />
             <input
               type="text"
               name="username"
               placeholder="Username"  
               value={username}
-              onChange={handleChange}              
+              onChange={handleChange}    
+              required          
             />
             <input
               type="password"
               name="password"
               placeholder="Password"
               value={password}
-              onChange={handleChange}  
+              onChange={handleChange}
+              required  
             />
             <p className='para'>People who use our service may have uploaded your contact information to Instagram.Learn More</p>
             <p className='para'>By signing up, you agree to our Terms, Privacy Policy and Cookies Policy</p>

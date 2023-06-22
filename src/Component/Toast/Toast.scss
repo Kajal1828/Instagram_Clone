@@ -1,0 +1,43 @@
+/* .toastify{
+    width: 20%;
+    padding: 1rem;
+    background-color: rgb(0, 0, 0);
+    margin-top: 15rem;
+    color: white;
+    font-size: 2rem;
+    margin-right: 15rem;
+    z-index: 4;
+    position: fixed;
+    top: 5%;
+    right: 5%;
+} */
+.toastify{
+    color: black;
+    animation-name: text;
+    animation-delay: 0s;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    margin-top: -600px;
+    position: absolute;
+    padding: 15px 20px;
+    font-weight: bold;
+  }
+  @keyframes text {
+    0%{
+        background-color: red;
+        right: 20%;
+        top: 0; 
+        margin-top: 70px;
+        
+    }
+    50%{
+        background-color: red;
+        right: 20%;
+        top: 20;
+    } 100%{
+        background-color: red;
+        right: 20%;
+        top: 0;
+        margin-top: 200px;
+    }
+  }

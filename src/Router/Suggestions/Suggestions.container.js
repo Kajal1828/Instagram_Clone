@@ -5,11 +5,17 @@ export default class SuggestionsContainer extends PureComponent {
     constructor(props) {
         super(props);
         this.state = { 
-            SuggestionsList: []
+            SuggestionsList: [],
+            toast:true,
          }
     }
     componentDidMount(){
         this.getSuggestions();
+        setTimeout(()=>{
+          this.setState({
+            toast:false
+          })
+        },3000)
       }
       getSuggestions(){
         fetch('http://localhost:3000/suggestion')

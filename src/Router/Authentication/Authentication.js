@@ -1,17 +1,19 @@
 import React, { Component } from 'react'
 import Login from '../LoginPage'
 import HomeContainer from '../HomePage';
+import { withRouterr } from './withRouterr';
 
-export default class Authentication extends Component {
+class Authentication extends Component {
   constructor() {
     super();
     this.state = {
       username: '',
       password: '',
+      toast:false,
       authenthication: false,
     };
   }
-
+   
   handleAuthication = () =>{
     const {username, password} =this.state
     fetch('http://localhost:3000/user')
@@ -21,16 +23,13 @@ export default class Authentication extends Component {
         console.log(item)
       if(item.username === username){
         if(item.password === password) {
-          this.setState({
-            authenthication: true,
-          })
-          return true;
+          this.props.navigate('/home')
         }
       }
       else{
-        alert("Enter correct details");
         this.setState({
-          authenthication: false,
+          authenthication: false
+          
         })
         return false
       }
@@ -47,15 +46,17 @@ export default class Authentication extends Component {
   render() {
     return (
       <div>
-        {this.state.authenthication ? <HomeContainer />:
+        {this.state.authenthication ? <HomeContainer /> :
         <Login 
          username={this.state.username}
          password={this.state.password}
          handleChange={this.handleChange}
          handleAuthication={this.handleAuthication}
+         toast={this.state.toast}
         />}
       </div>
     )
   }
 }
+export default withRouterr(Authentication)
 

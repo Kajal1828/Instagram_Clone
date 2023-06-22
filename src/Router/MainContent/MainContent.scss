@@ -40,7 +40,7 @@ body {
   .popup-header{
     display: flex;
     justify-content: space-between;
-    padding: 0 35px 0 15px;
+    padding: 10px 35px 0 15px;
     border-bottom: 2px solid black;
   }
   h1{
@@ -54,14 +54,15 @@ body {
     margin-top: 150px;
   }
   .inn{
-    height: 50px;
+    height: 70px;
     width: 150px;
     margin-left: 170px;
+    margin-top: 20px;
   }
   .captionfile{
-  padding: 8px;
+  padding: 8px 5px;
   width: 200px;
-  height: 35px;
+  height: 38px;
   border-radius: 8px;
   text-align: center;
   color: #fff;
@@ -85,6 +86,7 @@ body {
 }
 h3{
   margin-left: 225px;
+  margin-top: 20px;
 }
 .btn{
   height: 30px;
@@ -95,4 +97,117 @@ h3{
   background-color: #3897f0;
   color: #fff;
   font-weight: 600;
+}
+
+
+@media (max-width: 768px) {
+
+  .popup {
+    width: 70%;
+    height: 40%;
+    left:15%;
+    top: 8%;
+
+
+    .popup-header{
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 15px 10px 15px;
+      border-bottom: 2px solid rgb(146, 142, 142);
+    }
+    h1{
+      cursor: default;
+      font-size: 15px;
+      margin-left: 38%;
+    }
+    p{
+      font-size: 15px;
+      margin-top: 50px;
+    }
+    .captionfile{
+      width: 30%;
+      height: 20%;
+      font-size: 8px;
+      margin-left: 36%;
+      margin-top: 2%;
+    }
+    h3{
+      font-size: 15px;
+      margin-left: 45%;
+      margin-top: 2%;
+    }
+    .captionn{
+     height: 50px;
+      width: 50%;
+      margin-left: 27%;
+      margin-top: 10px;
+      outline: black;
+      padding: 0;
+    }
+    .btn{
+      height: 20%;
+      width: 15%;
+      margin-top: 8%;
+      margin-left: 80%;
+    }
+   
+  }
+
+ 
+}
+
+@media (max-width: 480px) {
+
+  .popup {
+    width: 90%;
+    height: 40%;
+    left:15%;
+    top: 8%;
+
+
+    .popup-header{
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 15px 10px 15px;
+      border-bottom: 2px solid rgb(146, 142, 142);
+    }
+    h1{
+      cursor: default;
+      font-size: 10px;
+      margin-left: 38%;
+    }
+    p{
+      font-size: 15px;
+      margin-top: 20px;
+    }
+    .captionfile{
+      width: 30%;
+      height: 20%;
+      font-size: 8px;
+      margin-left: 36%;
+      margin-top: 2%;
+    }
+    h3{
+      font-size: 15px;
+      margin-left: 45%;
+      margin-top: 2%;
+    }
+    .captionn{
+     height: 50px;
+      width: 50%;
+      margin-left: 27%;
+      margin-top: 10px;
+      outline: black;
+      padding: 0;
+    }
+    .btn{
+      height: 20%;
+      width: 15%;
+      margin-top: 2%;
+      margin-left: 80%;
+    }
+   
+  }
+
+ 
 }

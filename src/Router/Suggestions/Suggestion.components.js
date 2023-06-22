@@ -1,9 +1,10 @@
 import React, { PureComponent } from 'react'
 import "./Suggestions.scss"
+import ToastContainer from '../../Component/Toast/Toast.container'
 
 export default class SuggestionComponents extends PureComponent {
   render() {
-    const {SuggestionsList} = this.props
+    const {SuggestionsList,toast} = this.props
     return (
         <div>
         <div className="suggestions__container">
@@ -20,6 +21,7 @@ export default class SuggestionComponents extends PureComponent {
                     ))
                 }
             </div>
+            {toast&&<ToastContainer/>}
         </div>
     </div>
     )
