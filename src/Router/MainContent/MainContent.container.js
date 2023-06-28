@@ -13,6 +13,7 @@ export default class MainContentContainer extends PureComponent {
         popup:!prev.popup
     }))
   }
+
   handleUpload=(e) =>{ 
     const img = e.target.files[0]
     const reader = new FileReader();

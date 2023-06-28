@@ -1,7 +1,6 @@
 .post_container{
   width: 480px;
   border: 1px transparent;
-  background-color: white;
   margin-bottom: 25px;
   margin-left: 26%;
   margin-top: 15px;
@@ -61,7 +60,6 @@
   border: 0;
   color: #3897f0;
   font-weight: bold;
-  background-color: #fff;
 }
 .post_comment {
   position: relative;
@@ -71,7 +69,6 @@
   margin-left: 10px;
   padding: 2px 6px;
   font-size: 12px;
-  background-color: #fff;
   border: 1px solid #ccc;
   border-radius: 3px;
   cursor: pointer;
@@ -88,67 +85,74 @@
   margin-left: 90%;
 }
 
-@media (max-width: 768px) {
+@media (max-width : 768px) {
   .post_container{
-  width: 220px;  
-  margin-left: 10%;
-  margin-top: 15px;
+  width: 60%;
+  height: 780px;
+  margin-left: 25%;
 }
 .post_header{
-  max-height: 45px;
+  height: 80px;
+  width: 100%;
+
   border-bottom: 1px transparent;
   display: flex;
-}
+} 
   .post_image {
-    max-height: 30px;
-    max-width: 30px;
+    max-height: 40px;
+    max-width: 40px;
     border-radius : 50%;
   }
 
   .post_username {
-    margin-top: 15px;
-    font-size: 10px;
-    margin-left: 1px;
+    margin-top: 20px;
+    font-size: 15px;
+    margin-left: 2px;
   }
+  
   .postimg{
-    width: 200px;
-    height: 290px;
-    margin-left: 2%;
+    width: 98%;
+    height: 570px;
+    margin-left: 4px;
   }
   .post_reactimage {
-    width: 15px;
-    height: 15px;
-    margin-left: 1%;
+    width: 20px;
+    height: 20px;
+    margin-left: 0px;
   
   }
 
   .post__commentbox {
-    height: 38px;
-    font-size: 10px;
+    height: 30px;
+    width: 100%;
+    font-size: 12px;
+    margin-bottom: 50px;
   }
 
+
   .post_comment button {
-    margin-left: 5px;
-    padding: 1px 4px;
-    font-size: 10px;
+    font-size: 8px;
   }
   .post__commentboxBtn{
     position: absolute;
-    right:20px;
-    top:15px;
-    font-size: 10px;
+    top: 10px;
+    font-size: 12px;
     border: 0;
     color: #3897f0;
     font-weight: bold;
-    background-color: #fff;
+    right: 10px;
   }
+  .post_comment {
+    position: relative;
+  }
+  
   .like{
-    font-size: 10px;
-    margin-left: 2px;
+    font-size: 15px;
+    margin-left: 0px;
   }
   .btnicon img{
-    height: 12px;
-    width: 12px;
+    height: 15px;
+    width: 15px;
   }
   .btnicon{
     margin-left: 90%;
@@ -156,71 +160,75 @@
 }
 
 
-@media (max-width: 480px) {
+@media (max-width : 480px) {
   .post_container{
-  width: 170px;
-  background-color: white;
-  
-  margin-left: 17%;
-  margin-top: 15px;
+  width: 100%;
+  height: 680px;
+  margin-top: 20px;
+  margin-left: 0;
 }
 .post_header{
-  max-height: 45px;
+  height: 80px;
+  width: 100%;
+
   border-bottom: 1px transparent;
   display: flex;
-}
+} 
   .post_image {
-    max-height: 28px;
-    max-width: 28px;
+    max-height: 40px;
+    max-width: 40px;
     border-radius : 50%;
   }
 
   .post_username {
-    margin-top: 15px;
-    font-size: 10px;
-    margin-left: 1px;
-  }
-  .postimg{
-    width: 165px;
-    height: 240px;
-    margin-left: 2%;
+    margin-top: 20px;
+    font-size: 15px;
+    margin-left: 2px;
   }
   
-
+  .postimg{
+    width: 98%;
+    height: 480px;
+    margin-left: 4px;
+  }
   .post_reactimage {
-    width: 15px;
-    height: 15px;
-    margin-left: 1%;
+    width: 20px;
+    height: 20px;
+    margin-left: 0px;
   
   }
 
   .post__commentbox {
-    height: 38px;
-    font-size: 10px;
+    height: 30px;
+    width: 100%;
+    font-size: 12px;
+    margin-bottom: 50px;
   }
 
+
   .post_comment button {
-    margin-left: 5px;
-    padding: 1px 4px;
-    font-size: 10px;
+    font-size: 8px;
   }
   .post__commentboxBtn{
     position: absolute;
-    right:20px;
-    top:15px;
-    font-size: 10px;
+    top: 10px;
+    font-size: 12px;
     border: 0;
     color: #3897f0;
     font-weight: bold;
-    background-color: #fff;
+    right: 10px;
   }
+  .post_comment {
+    position: relative;
+  }
+  
   .like{
-    font-size: 10px;
-    margin-left: 2px;
+    font-size: 15px;
+    margin-left: 0px;
   }
   .btnicon img{
-    height: 10px;
-    width: 10px;
+    height: 15px;
+    width: 15px;
   }
   .btnicon{
     margin-left: 90%;

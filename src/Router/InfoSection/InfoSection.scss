@@ -25,25 +25,16 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   .info__container {
-    width: 100%;
-
-    .info__image {
-      min-width: 40px;
-      min-height: 40px;
-    }
-
-    .info_content {
-      .info_username {
-        margin: 3px;
-        font-size: 14px;
-      }
-
-      .info_description {
-        margin: 3px;
-        font-size: 12px;
-      }
-    }
+    display: none;
   }
+  
+}
+
+@media screen and (max-width : 1024px) {
+  .info__container {
+    display: none;
+  }
+  
 }

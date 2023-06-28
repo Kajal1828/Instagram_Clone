@@ -27,3 +27,16 @@
     font-weight: bold;
     margin: 10px;
 }
+
+@media (max-width : 480px) {
+    .suggestions__container{
+        display: none;
+    }
+    
+}
+@media (max-width : 1024px) {
+    .suggestions__container{
+        display: none;
+    }
+    
+}

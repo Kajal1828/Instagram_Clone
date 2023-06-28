@@ -9,7 +9,7 @@ export default class StatusbarComponents extends PureComponent {
         <div className='statusbar_container'>
           <img src="" alt="" />
              {
-                  statusList.map((item,index)=>(
+                statusList.map((item,index)=>(
                 <div className='status' key={index}>
                    <img className='statusbar_status' src={item.imageURL} alt=''/>
                    <div className='statusbar_text'>{item.username}</div>             
