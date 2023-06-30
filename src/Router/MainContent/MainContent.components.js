@@ -5,6 +5,7 @@ import MainPageContainer from '../MainPage'
 import SideNavbarContainer from '../../Component/SideNavbar'
 import StatusbarContainer from '../StatusBar'
 import SuggestionsContainer from '../Suggestions/Suggestions.container'
+import NavbarContainer from '../../Component/NavBar/Navbar.container'
 
 export default class MainContentComponents extends PureComponent {
   render() {
@@ -31,6 +32,7 @@ export default class MainContentComponents extends PureComponent {
             </div>
           </div>
         <div className='container'>
+        <NavbarContainer   handlePopup={handlePopup}/>
         <div className='column column-2'>
           <SideNavbarContainer
             handlePopup={handlePopup}

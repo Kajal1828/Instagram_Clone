@@ -25,7 +25,7 @@ export default class SideNavbarContainer extends PureComponent {
       window.location.href = '/'
     }
   render() {
-    const {popup,handlePopup} =this.props
+    const {handlePopup} =this.props
     return (
       <div>
         <SideNavbarComponents
@@ -37,9 +37,7 @@ export default class SideNavbarContainer extends PureComponent {
           handlePopup={handlePopup}
           LoghandlePopup={this.LoghandlePopup}
           showLogoutPopup={this.state.showLogoutPopup}
-          handleLogout={this.handleLogout}
-          
-          
+          handleLogout={this.handleLogout}         
         />
       </div>
     )

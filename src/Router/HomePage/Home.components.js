@@ -8,7 +8,7 @@ export default class HomeComponents extends PureComponent {
   render() {
     return (
       <div className='kk'>
-      <NavbarContainer/>
+      {/* <NavbarContainer/> */}
       <MainContentContainer/>
       <FooterContainer/>
       </div>

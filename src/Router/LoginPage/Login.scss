@@ -6,7 +6,7 @@
   }
   
   .login-card {
-    width: 350px;
+    width: 370px;
     padding: 40px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -24,10 +24,11 @@
         margin-bottom: 8px;
         border: 1px solid #ccc;
         border-radius: 3px;
-        margin-left: 4%;
-        background-color: rgb(250, 250, 250);
+        margin-left: 6%;
+        background-color: #fff;
         height: 35px;
         font-size: 12px;
+        padding: 5px;
       }
       button {
         width: 90%;
@@ -43,7 +44,8 @@
     }
     .forgot-password {
       text-align: center;
-      margin-top: 10px;
+      margin-top: 20px;
+      margin-bottom: 25px;
 
       a {
         color: #3897f0;

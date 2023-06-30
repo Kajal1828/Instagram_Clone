@@ -15,10 +15,12 @@ export default class NavbarContainer extends PureComponent {
         }))
       }
   render() {
+    const {handlePopup} =this.props
     return (
       <div>
         <NavbarComponents   {...this.state} 
-        handlePopup={this.handlePopup}
+        handlePopup={handlePopup}
+      
         />
       </div>
     )
